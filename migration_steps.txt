@@ -1,0 +1,20 @@
+STEP 1: Install MySQL and PostgreSQL
+
+STEP 2: Run mysql_setup.sql in MySQL
+
+STEP 3: Export database using:
+mysqldump -u root -p student_db > student_db.sql
+
+STEP 4: Modify SQL file for PostgreSQL:
+
+- Replace AUTO_INCREMENT with SERIAL
+- Remove backticks (`)
+
+STEP 5: Create database in PostgreSQL:
+CREATE DATABASE student_db;
+
+STEP 6: Import file:
+psql -U postgres -d student_db -f student_db.sql
+
+STEP 7: Verify data:
+SELECT * FROM students;
