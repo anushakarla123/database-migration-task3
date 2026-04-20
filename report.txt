@@ -1,0 +1,26 @@
+TITLE: Database Migration from MySQL to PostgreSQL
+
+OBJECTIVE:
+To migrate data from MySQL database to PostgreSQL while ensuring data integrity.
+
+TOOLS USED:
+
+- MySQL
+- PostgreSQL
+- Command Line (mysqldump, psql)
+
+PROCESS:
+
+1. Created a sample database in MySQL.
+2. Inserted sample data into the table.
+3. Exported the database using mysqldump.
+4. Modified SQL file to match PostgreSQL syntax.
+5. Created a database in PostgreSQL.
+6. Imported the modified SQL file into PostgreSQL.
+7. Verified that all data was successfully migrated.
+
+RESULT:
+The database was successfully migrated from MySQL to PostgreSQL without any data loss.
+
+CONCLUSION:
+Database migration helps in transferring data between different database systems efficiently. Proper syntax conversion and validation are important to maintain data integrity.
